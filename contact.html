@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <script src="modernizr-custom.js"></script>
+    <link rel="stylesheet" media="screen" href="basic.css">
+    <script src="suede.js"></script>
+    <style>
+        label{
+            display:block;
+        }
+        fieldset{
+            border:0;
+        }
+    </style>
+</head>
+<body>
+<h1>联系我们</h1>
+<form method="post" action="submit.html">
+    <fieldset>
+        <p>
+        <lable for="name">姓名:</lable>
+        <input type="text" id="name" name="name" placeholder="你的名字" required="required"/>
+        </p>
+        <p>
+            <lable for="email">邮箱:</lable>
+            <input type="email" id="email" name="email" placeholder="你的邮箱地址" required="required"/>
+        </p>
+        <p>
+            <label for="message">留言:</label>
+            <textarea cols="45" rows="7" id="message" name="message" required="required" placeholder="在这里写下你的留言"></textarea>
+        </p>
+        <input type="submit" value="提交"/>
+    </fieldset>
+</form>
+</body>
+</html>
